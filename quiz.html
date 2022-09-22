@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+<style>
+    div.add {
+        width: 90px;
+        height: 20px;
+        background-color: green;
+        padding: 5px;
+        border-radius: 4px;
+        color: white;
+        margin-top: 10px;
+    }
+    
+    div.submit {
+        width: 280px;
+        height: 30px;
+        background-color: seagreen;
+        text-align: center;
+        margin: auto;
+        border-radius: 5px;
+        padding: 8px;
+    }
+    
+    .submit a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+    }
+    
+    .top {
+        background-color: antiquewhite;
+    }
+    
+    .tab {
+        outline: 5px solid red;
+        outline-offset: 10px;
+    }
+</style>
+
+<body>
+    <table class="tab" border="0" width="60%" align="center" cellspacing="5" cellpadding="25px">
+        <tr class="top">
+            <td colspan="6" align="center">
+                <h1>ONLINE QUIZ</h1>
+                <span>You have 45 minutes to take quiz</span>
+                <br><br>
+            </td>
+            <tr>
+                <td cellspacing="10px">
+
+                    <form>
+                        <label>Student Name</label><br>
+                        <input type="text">
+                        <input type="text"><br><br>
+                        <label>Student Id</label><br>
+                        <input type="text" placeholder="ex: 2356"><br><br>
+                        <label>Section</label><br>
+                        <input type="text"><br><br>
+
+                        <label>1. Single choice question:</label><br>
+                        <input type="radio" name="single"> Wrong Answer<br>
+                        <input type="radio" name="single"> Wrong Answer<br>
+
+                        <input type="radio" name="single"> Wrong Answer<br>
+                        <input type="radio" name="single"> Wrong Answer<br><br>
+
+                        <label>1. Single choice question:</label><br>
+                        <input type="text" list="quies">
+                        <datalist id="quies">
+                  <option>
+                    Wrong
+                  </option>
+                  <option>
+                    Wrong
+                  </option>
+
+                  <option>
+                    Wrong
+                  </option>
+                  <option>
+                    Wrong
+                  </option>
+
+                  <option>
+                    Wrong
+                  </option>
+
+
+
+                </datalist><br><br>
+                        <label>2. Yes-No and True-False question</label><br>
+                        <input type="radio" name="crt_r_wrong">YES
+                        <input type="radio" name="crt_r_wrong">NO<br><br>
+
+                        <label>3. Multiple-choice question :</label><br>
+                        <input type="radio" name="single"> Wrong Answer<br>
+                        <input type="radio" name="single"> Wrong Answer<br>
+
+                        <input type="radio" name="single"> Wrong Answer<br>
+                        <input type="radio" name="single"> Wrong Answer<br><br>
+
+                        <label>4. Short text open-ended question :</label>
+                        <input type="text" rows="5" cols="80"><br><br><br>
+                        <label>Long text open-ended question</label><br>
+                        <textarea rows="5" cols="80"></textarea><br><br>
+                        <label>5 Fill in the blanks question</label><br> I am a sentence with a <input type="text">field. Look I'm another sentence <br><br> with a <input type="text"> field and yes with a hint!<br><br>
+                        <label>6. Listing question</label><br>
+                        <input type=""><br>
+                        <div class="add"><a hreef="">ADD MORE</a></div><br><br>
+                        <label>7. File upload</label><br>
+                        <input type="file"><br><br>
+                        <table border="1" width="100%">
+                            <tr>
+                                <th>
+
+
+                                </th>
+                                <th>
+                                    keyword
+                                </th>
+                                <th>Check box</th>
+                                <th>Select</th>
+                            </tr>
+                            <tr>
+                                <td>Question 1</td>
+                                <td align="center"><input type="text"></td>
+                                <td align="center"><input type="checkbox"></td>
+                                <td align="center"><select>
+                                  <option></option>
+                                  <option>YES</option>
+                                  <option>NO</option>
+                                </select>
+
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Question 2</td>
+                                <td align="center"><input type="text"></td>
+                                <td align="center"><input type="checkbox"></td>
+                                <td align="center"><select>
+                                  <option></option>
+                                  <option>YES</option>
+                                  <option>NO</option>
+                                </select>
+
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Question 3</td>
+                                <td align="center"><input type="text"></td>
+                                <td align="center"><input type="checkbox"></td>
+                                <td align="center"><select>
+                                  <option></option>
+                                  <option>YES</option>
+                                  <option>NO</option>
+                                </select>
+
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Question 4</td>
+                                <td align="center"><input type="text"></td>
+                                <td align="center"><input type="checkbox"></td>
+                                <td align="center"><select>
+                                  <option></option>
+                                  <option>YES</option>
+                                  <option>NO</option>
+                                </select>
+
+
+                                </td>
+                            </tr>
+                        </table><br><br>
+                        <label>9. According to the graph above, Question?</label><br>
+                        <input type="checkbox">Wrong Answer<br>
+                        <input type="checkbox">Wrong Answer<br>
+                        <input type="checkbox">Wrong Answer<br>
+                        <input type="checkbox">Wrong Answer<br>
+                        <input type="checkbox">Wrong Answer
+                        <br><br>
+
+                        <label>10. Image options question</label><br><br>
+                        <table width="70%" border="0">
+                            <tr>
+                                <td align="center">
+                                    <img src="cal.jpg" width="50px"><br><input type="checkbox"><br>
+                                    <span>Wrong <br>answer</span>
+                                </td>
+                                <td align="center">
+                                    <img src="book.jpg" width="70px"><br><input type="checkbox"><br>
+                                    <span>Wrong <br>answer</span>
+                                </td>
+                                <td align="center">
+                                    <img src="note.jpg" width="50px"><br><input type="checkbox"><br>
+                                    <span>Wrong <br>answer</span>
+                                </td>
+                                <td align="center">
+                                    <img src="cut.png" width="50px"><br><input type="checkbox"><br>
+                                    <span>Wrong <br>answer</span>
+                                </td>
+                            </tr>
+                        </table>
+                        <br><br>
+
+                        <label>11. Drawings, Paintings, Sketchings:</label><br>
+                        <input type="color"><br>
+                        <textarea rows="30px" cols="80px"></textarea><br><br>
+
+
+
+
+
+
+
+                    </form>
+
+                </td>
+
+
+            </tr>
+            <tr>
+                <td colspan="6">
+                    <div class="submit">
+                        <a href="">SUBMIT</a>
+                    </div>
+                </td>
+            </tr>
+
+    </table>
+
+</body>
+
+</html>
